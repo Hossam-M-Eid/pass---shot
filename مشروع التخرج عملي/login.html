@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stayel2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="icons/login.ico">
+    <title>Login</title>
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+        
+            // Check if username and password are correct
+            if (username === "Sasa" && password === "12345678") {
+                alert("Login successful!");
+                // Redirect to another page or perform any other action here
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+        </script>
+</head>
+<body class="flogin">
+    <section class="home3">
+
+        <div class="wrapper">
+            <span class="bg-animate"></span>
+            <span class="bg-animate2"></span>
+            <div class="login">
+                <h2 class="no">login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" id="username" name="username">
+                        <label>username</label>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password" name="password">
+                        <label>Password</label>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <div>
+                        <button type="button" onclick="login()">Login</button>
+                      </div>
+
+                    <div class="register">
+                        <p>Don't Have An Account ? <a href="#" class="register-link">Sign Up </a></p>
+                    </div>
+                </form>
+                
+            </div>
+            <div class="info-text login1">
+                <h2" class="no1">WELCOME BACK!</h2>
+                <p>You Can Learn More About Our Content If You Go To The Home Page</p>  
+
+                <a href="file:///G:Eslam/مشروع التخرج عملي/home.html" target="_blank" class="btn1">Back To Home</a>
+                
+            </div>
+            <div class="Mregister">
+                <h2 class="no">sign up</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>username</label>
+                        <i class='bx bxs-user'></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>Email</label>
+                        <i class='bx bxs-envelope'></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" required>
+                        <label>Password</label>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+
+                    <div class="register">
+                        <p>Already Have An Account ? <a href="#" class="register-link">Log In </a></p>
+                    </div>
+                </form>
+                
+            </div>
+
+
+            <div class="info-text register">
+                <h2" class="no1">WELCOME BACK!</h2>
+                <p>You Can Learn More About Our Content If You Go To The Home Page.</p>  
+
+                <a href="file:///G:Eslam/مشروع التخرج عملي/home.html" target="_blank" class="btn1">Back To Home</a>
+                
+            </div>
+
+
+        </div>
+    </section>
+    <script src="script"></script>
+    
+</body>
+</html>
